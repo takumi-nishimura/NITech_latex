@@ -1,0 +1,69 @@
+\documentclass[a4j,12pt,uplatex]{ujreport}
+
+\usepackage{float}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{url}
+\usepackage{here}
+\usepackage{dirtytalk}
+\usepackage{otf}
+\usepackage[subrefformat=parens]{subcaption}
+\usepackage[dvipdfmx]{hyperref, graphicx}
+\usepackage{pxjahyper}
+\hypersetup{
+	colorlinks=false, % リンクに色をつけない設定
+	bookmarks=true, % 以下ブックマークに関する設定
+	bookmarksnumbered=true,
+	pdfborder={0 0 0},
+	bookmarkstype=toc,
+}
+
+\input{style.tex}
+
+\begin{document}
+
+% 表紙
+\title{
+	\vspace*{-1cm}
+	{\huge 修士論文}\\
+	\vspace{1cm}
+	{\LARGE タイトル\\
+        \vspace{2mm}
+        \large (English title)
+    }
+}
+\author{
+指導教員  教授\\
+\hspace{30mm}
+\vspace{10mm}\\
+工学研究科博士前期課程\\
+工学専攻 電気・機械工学系プログラム\\
+2099年度入学\\
+\vspace{5mm}\\
+学生番号 XXXXXXXX\\
+{\Large XXXX}
+}
+\date{（2099年  2月 1日 提出）}
+\pagestyle{headings}
+\maketitle
+
+% 前書き
+\pagenumbering{roman}
+\tableofcontents
+\listoffigures
+\listoftables
+
+% 本文
+\pagenumbering{arabic}
+\setcounter{page}{0}
+
+\input{chap1/chap1.tex}
+
+\bibliography{ref}
+\bibliographystyle{junsrt}
+\addcontentsline{toc}{chapter}{参考文献}
+
+\input{performance/performance.tex}
+\input{acknowledgement/acknowledgement.tex}
+
+\end{document}

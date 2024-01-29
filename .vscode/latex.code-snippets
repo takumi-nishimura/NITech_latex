@@ -1,0 +1,37 @@
+{
+    "figure": {
+        "prefix": "fig",
+        "body": [
+            "\\begin{figure}[htbp]",
+            "\\centering",
+            "\\includegraphics[width=0.8\\columnwidth]{${1:figure}}",
+            "\\caption{${2:caption}}",
+            "\\label{fig:${3:label}}",
+            "\\end{figure}"
+        ],
+        "description": "Figure environment"
+        },
+    "multifig": {
+        "prefix": "multifig",
+        "body": [
+            "\\begin{figure}[htbp]",
+            "\\begin{minipage}[b]{0.45\\columnwidth}",
+            "\\centering"
+            "\\includegraphics[width=\\columnwidth]{${1:figure1}}",
+            "\\subcaption{${2:subcaption1}}",
+            "\\label{fig:${3:label1}}",
+            "\\end{minipage}"
+            "\\hspace{0.1\\columnwidth",
+            "\\begin{minipage}[b]{0.45\\columnwidth}}",
+            "\\centering"
+            "\\includegraphics[width=\\columnwidth]{${4:figure2}}",
+            "\\subcaption{${5:subcaption2}}",
+            "\\label{fig:${6:label2}}",
+            "\\end{minipage}",
+            "\\caption{${7:caption}}",
+            "\\label{fig:${8:label}}",
+            "\\end{figure}"
+        ],
+        "description": "Multi figure environment"
+        }
+}

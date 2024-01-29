@@ -1,0 +1,35 @@
+% 目次の深さ
+\setcounter{tocdepth}{2}
+
+\renewcommand{\bibname}{参考文献}
+\renewcommand{\figurename}{Fig.}
+\renewcommand{\tablename}{Table}
+
+% 参照を楽にするコマンド
+\def \figref #1{\figurename\ref{#1}}
+\def \tbref #1{\tablename\ref{#1}}
+\def \equref #1{式(\ref{#1})}
+\def \chapref #1{第\ref{#1}章}
+\def \appendixref #1{付録\ref{#1}}
+\def \secref  #1{\ref{#1}節}
+\def \subsecref  #1{\ref{#1}小節}
+
+\def\thesis #1{\gdef\@thesis{#1}}
+\def\teacher #1{\gdef\@teacher{#1}}
+\def\organization #1{\gdef\@organization{#1}}
+
+\setlength{\oddsidemargin}{9mm}
+\setlength{\evensidemargin}{9mm}
+
+\setlength{\topmargin}{-21mm}
+\setlength{\headheight}{3mm}
+\setlength{\headsep}{24mm}
+
+\setlength{\textwidth}{155mm}
+\setlength{\textheight}{240mm}
+
+\setlength{\parindent}{1.1zw}
+\kanjiskip=0.1zw plus .1zw minus .05zw
+\renewcommand{\baselinestretch}{1.2}
+
+\pagestyle{headings}
